@@ -3,15 +3,16 @@ os:
   - windows
 language: node_js
 node_js:
-  - 6
   - 8
   - 10
   - 11
+  - 6
 env:
   - UGLIFYJS_TEST_ALL=1 TRAVIS=1
 matrix:
-  fast_finish: true
+    fast_finish: true
 cache:
-  directories:
-    - tmp
-    - node_modules
+    directories:
+      - tmp
+      - node_modules
+dist: trusty
